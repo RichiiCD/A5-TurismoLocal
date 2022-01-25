@@ -1,0 +1,401 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh7USew8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHvxk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+html {
+  font-size: 14px;
+}
+body {
+  margin: 0;
+}
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* COLUMNAS */
+.column-15 {
+  width: 15%;
+  height: 100vh;
+  float: left;
+  background-color: white;
+}
+.column-20 {
+  width: 20%;
+  float: left;
+}
+.column-65 {
+  width: 65%;
+  height: 100vh;
+  float: left;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.column-65::-webkit-scrollbar {
+  width: 10px;
+}
+.column-65::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+}
+.column-65::-webkit-scrollbar-thumb {
+  background-color: #cecece;
+  border-radius: 10px;
+}
+.column-33 {
+  width: 33%;
+  float: left;
+}
+.column-50 {
+  width: 50%;
+  float: left;
+}
+.column-25 {
+  width: 25%;
+  float: left;
+}
+.column-75 {
+  width: 75%;
+  float: left;
+}
+.column-30 {
+  width: 30%;
+  float: left;
+}
+.column-70 {
+  width: 70%;
+  float: left;
+}
+/* UTILS */
+.relleno-lateral {
+  padding: 0 1em;
+}
+.relleno-cards {
+  padding: 0 0.5em;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* DISEÑO PAGINA */
+h1 {
+  font-size: 4.2em;
+  margin: 0;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 0;
+  padding-top: 0.8em;
+}
+h3 {
+  text-align: center;
+  font-size: 1.7em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid black;
+}
+h4 {
+  position: relative;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0.5em;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+.navbar p {
+  font-size: 1.7em;
+  margin-bottom: 0.5em;
+}
+.navbar ul {
+  margin: 0;
+  padding-left: 1.8em;
+}
+.navbar ul li {
+  margin-bottom: 0.5em;
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+.navbar ul li a:hover {
+  color: grey;
+}
+.navbar ul li:last-of-type {
+  display: none;
+}
+#interes .row {
+  margin-bottom: 2em;
+}
+#interes .interescard {
+  width: 100%;
+  height: 600px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 2em;
+}
+#interes .interescard .interesimg {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  transition: 0.2s ease-in-out;
+}
+#interes .interescard .interesimg:hover {
+  opacity: 80%;
+}
+#interes .interescard #interesimg-1 {
+  background-image: url('../img/sagradafamilia.jfif');
+}
+#interes .interescard #interesimg-2 {
+  background-image: url('../img/pedrera.jpg');
+}
+#interes .interescard #interesimg-3 {
+  background-image: url('../img/parkguell.jfif');
+}
+#interes .interescard #interesimg-4 {
+  background-image: url('../img/laboqueria.jpg');
+}
+#interes .interescard #interesimg-5 {
+  background-image: url('../img/larambla.jfif');
+}
+#interes .interescard #interesimg-6 {
+  background-image: url('../img/catedraldebarcelona.jpg');
+}
+#interes .interescard .nombrelugar {
+  font-size: 1.4em;
+}
+#interes .interescard .desclugar {
+  font-size: 1.2em;
+  padding-bottom: 1.1em;
+}
+#interes .interescard:hover {
+  transform: scale(1.015);
+}
+#gallery .galleryimg {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 1em;
+}
+#gallery #galleryimg-1 {
+  background-image: url('../img/gallery1.jpg');
+}
+#gallery #galleryimg-2 {
+  background-image: url('../img/gallery2.jpg');
+}
+#gallery #galleryimg-3 {
+  background-image: url('../img/gallery3.jpg');
+}
+#gallery #galleryimg-4 {
+  background-image: url('../img/gallery4.jpg');
+}
+#gallery #galleryimg-5 {
+  background-image: url('../img/gallery5.jpeg');
+}
+#gallery #galleryimg-6 {
+  background-image: url('../img/gallery6.jpg');
+}
+#gallery #galleryimg-7 {
+  background-image: url('../img/gallery7.jpg');
+}
+#gallery #galleryimg-8 {
+  background-image: url('../img/gallery8.jpg');
+}
+#gallery #galleryimg-9 {
+  background-image: url('../img/gallery9.jpg');
+}
+#gallery #galleryimg-10 {
+  background-image: url('../img/gallery10.jpg');
+}
+#gallery #galleryimg-11 {
+  background-image: url('../img/gallery11.jpg');
+}
+#gallery #galleryimg-12 {
+  background-image: url('../img/gallery12.jpg');
+}
+#gallery #galleryimg-13 {
+  background-image: url('../img/gallery13.jpg');
+}
+#hoteles {
+  margin-top: 3em;
+}
+#hoteles .row {
+  margin-bottom: 1em;
+}
+#hoteles iframe {
+  width: 100%;
+  height: 350px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#hoteles .hotelimg {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#hoteles .hotelimg p {
+  margin: 0;
+  height: 100%;
+  color: white;
+  font-size: 4em;
+  font-weight: 400;
+  text-shadow: 1px 5px 4px #6D6D6D;
+  text-align: center;
+}
+#hoteles .hotelimg:hover {
+  opacity: 80%;
+}
+#hoteles #hotelimg-1 {
+  background-image: url('../img/hotel1.jpg');
+}
+#hoteles #hotelimg-2 {
+  background-image: url('../img/hotel2.jpg');
+}
+#hoteles #hotelimg-3 {
+  background-image: url('../img/hotel3.jpg');
+}
+#noticias {
+  height: 100vh;
+  overflow-y: auto;
+}
+#noticias .noticia-item {
+  display: block;
+  background-color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #c5c5c5;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: black;
+}
+#noticias .noticia-item p {
+  margin: 0;
+}
+#noticias .noticia-item .subtitle {
+  margin-top: 0.5em;
+}
+#noticias .noticia-item:hover {
+  background-color: #e9e9e9;
+}
+/* MEDIA QUERIES */
+@media (max-width: 1300px) {
+  html {
+    font-size: 12px;
+  }
+  .column-33 {
+    width: 50%;
+    float: left;
+  }
+  .navbar p {
+    font-size: 1.3em;
+  }
+  .navbar ul {
+    padding-left: 1.4em;
+  }
+  .navbar ul li a {
+    font-size: 1em;
+  }
+  #interes .interescard {
+    height: 570px;
+  }
+  #gallery .column-25 {
+    width: 50%;
+  }
+  #gallery .column-75 {
+    width: 100%;
+  }
+  #gallery .galleryimg100 {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #cecece;
+    border-radius: 10px;
+  }
+  .column-15 {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 90%;
+  }
+  .column-20 {
+    width: 100%;
+    height: auto;
+  }
+  .column-65 {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+  }
+  .navbar p {
+    display: none;
+  }
+  .navbar ul {
+    padding: 1em 0;
+    text-align: center;
+  }
+  .navbar ul li:last-of-type {
+    display: block;
+  }
+  .navbar ul li a {
+    font-size: 1.1em;
+  }
+  #interes .column-33 {
+    width: 100%;
+    float: left;
+  }
+  #interes .interescard {
+    height: 530px;
+  }
+  #hoteles .column-70 {
+    width: 60%;
+  }
+  #hoteles .column-30 {
+    width: 40%;
+  }
+  #noticias {
+    height: auto;
+  }
+}

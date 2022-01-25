@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+}
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* COLUMNAS */
+
+
+.column-15 {
+    width: 15%;
+    height: 100vh;
+    float: left;
+    background-color: white;
+}
+
+.column-20 {
+    width: 20%;
+    float: left;
+}
+
+.column-65 {
+    width: 65%;
+    height: 100vh;
+    float: left;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.column-65::-webkit-scrollbar {
+    width: 10px;
+}
+
+.column-65::-webkit-scrollbar-track {
+    background-color: rgb(235, 235, 235);
+}
+
+.column-65::-webkit-scrollbar-thumb {
+    background-color: rgb(206, 206, 206);
+    border-radius: 10px;
+}
+
+.column-33 {
+    width: 33%;
+    float: left;
+}
+
+.column-50 {
+    width: 50%;
+    float: left;
+}
+
+.column-25 {
+    width: 25%;
+    float: left;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+}
+
+.column-30 {
+    width: 30%;
+    float: left;
+}
+
+.column-70 {
+    width: 70%;
+    float: left;
+}
+
+
+
+/* UTILS */
+
+.relleno-lateral {
+    padding: 0 1em;
+}
+
+.relleno-cards {
+    padding: 0 0.5em;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* DISEÑO PAGINA */
+
+h1 {
+    font-size: 4.2em;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+    padding-top: 0.8em;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.7em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+}
+
+h4 {
+    position: relative;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin: 0;
+    border-bottom: 1px solid black;
+}
+
+
+
+.navbar {
+    p {
+        font-size: 1.7em;
+        margin-bottom: 0.5em;
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 1.8em;
+        
+        li {
+            margin-bottom: 0.5em;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.2em;
+            }
+
+            a:hover {
+                color: grey;
+            }
+        }
+
+        li:last-of-type {
+            display: none;
+        }
+
+    }
+}
+
+
+#interes {
+
+    .row {
+        margin-bottom: 2em;
+    }
+
+    .interescard {
+        width: 100%;
+        height: 600px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: 0.2s ease-in-out;
+        margin-bottom: 2em;
+
+        .interesimg {
+            display: block;
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            transition: 0.2s ease-in-out;
+        }
+
+        .interesimg:hover {
+            opacity: 80%;
+        }
+
+        #interesimg-1 {
+            background-image: url('../img/sagradafamilia.jfif');
+        }
+
+        #interesimg-2 {
+            background-image: url('../img/pedrera.jpg');
+        }
+
+        #interesimg-3 {
+            background-image: url('../img/parkguell.jfif');
+        }
+
+        #interesimg-4 {
+            background-image: url('../img/laboqueria.jpg');
+        }
+
+        #interesimg-5 {
+            background-image: url('../img/larambla.jfif');
+        }
+
+        #interesimg-6 {
+            background-image: url('../img/catedraldebarcelona.jpg');
+        }
+
+        .nombrelugar {
+            font-size: 1.4em;
+        }
+
+        .desclugar {
+            font-size: 1.2em;
+            padding-bottom: 1.1em;
+        }
+    }
+
+    .interescard:hover {
+        transform: scale(1.015);
+    }
+}
+
+
+#gallery {
+
+    .galleryimg {
+        display: block;
+        background-size: cover;
+        background-position: center;
+        height: 230px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-bottom: 1em;
+    }
+
+    #galleryimg-1 {
+        background-image: url('../img/gallery1.jpg');
+    }
+
+    #galleryimg-2 {
+        background-image: url('../img/gallery2.jpg');
+    }
+
+    #galleryimg-3 {
+        background-image: url('../img/gallery3.jpg');
+    }
+
+    #galleryimg-4 {
+        background-image: url('../img/gallery4.jpg');
+    }
+    
+    #galleryimg-5 {
+        background-image: url('../img/gallery5.jpeg');
+    }
+    
+    #galleryimg-6 {
+        background-image: url('../img/gallery6.jpg');
+    }
+    
+    #galleryimg-7 {
+        background-image: url('../img/gallery7.jpg');
+    }
+    
+    #galleryimg-8 {
+        background-image: url('../img/gallery8.jpg');
+    }
+    
+    #galleryimg-9 {
+        background-image: url('../img/gallery9.jpg');
+    }
+    
+    #galleryimg-10 {
+        background-image: url('../img/gallery10.jpg');
+    }
+    
+    #galleryimg-11 {
+        background-image: url('../img/gallery11.jpg');
+    }
+    
+    #galleryimg-12 {
+        background-image: url('../img/gallery12.jpg');
+    }
+    
+    #galleryimg-13 {
+        background-image: url('../img/gallery13.jpg');
+    }
+}
+
+
+#hoteles {
+    margin-top: 3em;
+
+    .row {
+        margin-bottom: 1em;
+    }
+
+    iframe {
+        width: 100%;
+        height: 350px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    
+    .hotelimg {
+        display: block;
+        background-size: cover;
+        background-position: center;
+        height: 350px;
+        transition: 0.2s ease-in-out;
+        text-decoration: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        
+        p {
+            margin: 0;
+            height: 100%;
+            color: white;
+            font-size: 4em;
+            font-weight: 400;
+            text-shadow: 1px 5px 4px #6D6D6D;
+            text-align: center;
+        }
+    }
+
+    .hotelimg:hover {
+        opacity: 80%;
+    }
+
+    #hotelimg-1 {
+        background-image: url('../img/hotel1.jpg');
+    }
+
+    #hotelimg-2 {
+        background-image: url('../img/hotel2.jpg');
+    }
+
+    #hotelimg-3 {
+        background-image: url('../img/hotel3.jpg');
+    }
+}
+
+
+#noticias {
+    height: 100vh;
+    overflow-y: auto;
+
+    .noticia-item {
+        display: block;
+        background-color: white;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid rgb(197, 197, 197);
+        transition: 0.2s ease-in-out;
+        text-decoration: none;
+        color: black;
+
+        p {
+            margin: 0;
+        }
+
+        .subtitle {
+            margin-top: 0.5em;
+        }
+    }
+    
+    .noticia-item:hover {
+        background-color: rgb(233, 233, 233);
+    }
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1300px) {
+    html {
+        font-size: 12px;
+    }
+
+    .column-33 {
+        width: 50%;
+        float: left;
+    }
+
+    .navbar {
+        p {
+            font-size: 1.3em;
+        }
+        ul {
+            padding-left: 1.4em;
+            li a {
+                font-size: 1em;
+            }    
+        }
+    }
+
+    #interes .interescard {
+        height: 570px;
+    }
+
+    #gallery {
+        .column-25 {
+            width: 50%;
+        }
+
+        .column-75 {
+            width: 100%;
+        }
+
+        .galleryimg100 {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    body::-webkit-scrollbar-track {
+        background-color: rgb(235, 235, 235);
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: rgb(206, 206, 206);
+        border-radius: 10px;
+    }
+    
+    .column-15 {
+        width: 100%;
+        height: auto;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        opacity: 90%;
+    }
+
+    .column-20 {
+        width: 100%;
+        height: auto;
+    }
+    
+    .column-65 {
+        width: 100%;
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .navbar {
+        p {
+            display: none;
+        }
+
+        ul {
+            padding: 1em 0;
+            text-align: center;
+
+            li:last-of-type {
+                display: block;
+            }
+
+            li a {
+                font-size: 1.1em;
+            }
+        }
+
+    }
+
+    #interes {
+        .column-33 {
+            width: 100%;
+            float: left;
+        }
+
+        .interescard {
+            height: 530px;
+        }
+    }
+
+    #hoteles {
+        .column-70 {
+            width: 60%;
+        }
+
+        .column-30 {
+            width: 40%;
+        }
+    }
+
+    #noticias {
+        height: auto;
+    }
+}
